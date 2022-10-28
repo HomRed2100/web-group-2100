@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя страница - Сайт группы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/login-popup.js"></script>
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header-fixed">
+            <img class="site-logo" src="../img/logo.svg" alt="Логотип">
+            <ul class="site-menu">
+                <li><a class="menu-link" href="../index.html">Главная</a></li>
+                <li><a class="menu-link active-link" href="students.html">Студенты</a></li>
+                <li><a class="menu-link" href="about.html">О курсе</a></li>
+                <li><a class="menu-link" href="contacts.html">Контакты</a></li>
+            </ul>
+            <a class="login-button" href="login.html">Войти</a>
+        </div>
+        <div class="login-popup">
+            <h2 class="login-heading">Войти на сайт</h2>
+            <form class="login-form" action="#" method="get">
+                <input class="login-input" name="login" type="text" placeholder="Логин" required>
+                <input class="password-input" name="password" type="password" placeholder="Пароль" required>
+                <button class="popup-button" type="submit">Войти</button>
+            </form>
+        </div>
+    </header>
+    <main class="main">
+    <h1 class="main-heading">Страница студента</h1>
+    <div class="about_me">
+        <img class="my_photo" src="../img/myphoto.jpg" alt="Фото студента" width="350" height="445">
+        <div class="column-text"><p>Всем привет!</p> <p>Меня зовут Ларина Мария, мне 32 годика, сейчас живу в Тамбове.</p><p>По образованию я учитель начальных классов, но призванием это так и не стало. Есть опыт работы корректором, seo-редактором, копирайтером.</p><p>В работе я время от времени сталкивалась с версткой, но долго сомневалась, стоит ли в нее углубляться. В конце концов интерес победил - и вот я здесь!</p><p>Люблю свою семью, путешествовать, кино и музыку.</p><p>Не забудьте выбрать себе вкусняшку))</p></div>
+    </div>
+        <form action="#" method="get">
+        <fieldset>
+            <legend>Что выбрать хорошего?</legend>
+           <div class="choice">
+                    <div>
+                        <div>
+                            <input id="icecream" type="checkbox" name="eat" value="icecream">
+                            <label for="icecream">Мороженко</label>
+                        </div>
+                        <div>
+                            <input id="bread" type="checkbox" name="eat" value="bread">
+                            <label for="bread">Буличка</label>
+                        </div>
+                        <div>
+                            <input id="chips" type="checkbox" name="eat" value="chips">
+                            <label for="chips">Чипсики</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input id="all" type="radio" name="choice" value="all">
+                            <label for="all">Все сразу</label>
+                        </div>
+                        <div>
+                            <input id="nothing" type="radio" name="choice" value="nothing">
+                            <label for="nothing">Ваще ничего</label>
+                        </div>
+                    </div>
+                <button class="button" type="submit">Отправить</button>
+            <div class="choice-popup">
+                <p class="good-choice">Отличный выбор!<p>
+            </div>
+        </div>
+        </fieldset>
+        </form>
+    </main>
+    <footer class="footer">
+        <p class="copywrite">2022 &copy; <a class="innop-link" href="https://innopolis.com/" target="_blank">Иннополис</a></p>
+    </footer>
+</body>
+</html>
