@@ -4,25 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт группы</title>
+    <title>О курсе - Сайт группы</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script defer src="../js/login-popup.js"></script>
 </head>
 <body class="page">
     <header class="header">
-        <img class="site-logo" src="../img/logo.svg" alt="логотип">
-        <ul class="site-menu">
-            <li><a class="menu-link" href="../index.html">Главная</a></li>
-            <li><a class="menu-link" href="students.html">Студенты</a></li>
-            <li><a class="menu-link active-link" href="#">О курсе</a></li>
-            <li><a class="menu-link" href="contacts.html">Контакты</a></li>
-        </ul>
-        <a class="login-button" href="login.html">Войти</a>
+        <div class="header-fixed">
+            <img class="site-logo" src="../img/logo.svg" alt="логотип">
+            <ul class="site-menu">
+                <li><a class="menu-link" href="../index.html">Главная</a></li>
+                <li><a class="menu-link" href="students.html">Студенты</a></li>
+                <li><a class="menu-link active-link" href="#">О курсе</a></li>
+                <li><a class="menu-link" href="contacts.html">Контакты</a></li>
+            </ul>
+            <a class="login-button" href="login.html">Войти</a>
+        </div>
+        <div class="login-popup">
+            <h2 class="login-heading">Войти на сайт</h2>
+            <form class="login-form" action="#" method="get">
+                <input class="login-input" name="login" type="text" placeholder="Логин" required>
+                <input class="password-input" name="password" type="password" placeholder="Пароль" required>
+                <button class="popup-button" type="submit">Войти</button>
+            </form>
+        </div>
     </header>
-    <main class="main">
-
+    <main class="main main-about">
+        <h1 class="main-heading about-heading">О курсе </h1>
+        <p class="about-text">Посмотрите видео о нас</p>
+        <iframe class="video-about" width="820" height="550" src="https://www.youtube.com/embed/0v7pdd4za6s" title="Как эффективно искать информацию по фронтенду" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </main>
     <footer class="footer">
         <p class="copywrite">2022 &copy; <a class="innop-link" href="https://innopolis.com/" target="_blank">Иннополис</a></p>
