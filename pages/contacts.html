@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт группы</title>
+    <title>Контакты - Сайт группы</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script defer src="../js/login-popup.js"></script>
 </head>
 <body class="page">
     <header class="header">
-        <img class="site-logo" src="../img/logo.svg" alt="логотип">
-        <ul class="site-menu">
-            <li><a class="menu-link" href="../index.html">Главная</a></li>
-            <li><a class="menu-link" href="students.html">Студенты</a></li>
-            <li><a class="menu-link" href="about.html">О курсе</a></li>
-            <li><a class="menu-link active-link" href="#">Контакты</a></li>
-        </ul>
-        <a class="login-button" href="login.html">Войти</a>
+        <div class="header-fixed">
+            <img class="site-logo" src="../img/logo.svg" alt="логотип">
+            <ul class="site-menu">
+                <li><a class="menu-link" href="../index.html">Главная</a></li>
+                <li><a class="menu-link" href="students.html">Студенты</a></li>
+                <li><a class="menu-link" href="about.html">О курсе</a></li>
+                <li><a class="menu-link active-link" href="#">Контакты</a></li>
+            </ul>
+            <a class="login-button" href="login.html">Войти</a>
+        </div>
+        <div class="login-popup">
+            <h2 class="login-heading">Войти на сайт</h2>
+            <form class="login-form" action="#" method="get">
+                <input class="login-input" name="login" type="text" placeholder="Логин" required>
+                <input class="password-input" name="password" type="password" placeholder="Пароль" required>
+                <button class="popup-button" type="submit">Войти</button>
+            </form>
+        </div>
     </header>
-    <main class="main">
+    <main class="main main-contacts">
+        <h1 class="main-heading contacts-width contacts-heading">Как нас найти </h1>
+        <div class="contacts-map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/?ll=30.537203%2C59.929296&utm_medium=mapframe&utm_source=maps&z=9.72" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/-/CCUZuOtN0A" width="560" height="370" allow="fullscreen" style="position:relative;"></iframe></div>
+        <h2 class="next-heading contacts-width">Наши контакты</h2>
+        <address class="text-contacts contacts-width">
+            <p>Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000</p>
+            <a class="text-contacts contacts-width" href="tel:+78125555555">Тел: +7 (812) 555-55-55</a>
+        </address>
 
     </main>
     <footer class="footer">
